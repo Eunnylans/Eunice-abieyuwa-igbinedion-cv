@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import testPdf from "./Eunice Abieyuwa Igbinedion CV.pdf";
-import "./index.css";
+import "./index.css"; 
+import worker from 'pdfjs-dist/build/pdf.worker.entry';
+
+pdfjs.GlobalWorkerOptions.workerSrc = worker;
 
 // More examples here
 // https://github.com/wojtekmaj/react-pdf/wiki/Recipes
